@@ -1,0 +1,2147 @@
+[
+ {
+  "fn": "gridTruth",
+  "args": [
+   "8.5",
+   "11",
+   "3.5",
+   "2",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 8.5 by 11, margin 0, gap 0, pieces 3.5 by 2: upright gives 2 across by 5 down, 10 pieces; turned gives 4 across by 3 down, 12 pieces. Best is turned with 12 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "8.5",
+   "11",
+   "3.5",
+   "2",
+   "0.1",
+   "0.25"
+  ],
+  "expected": "Sheet 8.5 by 11, margin 0.25, gap 0.1, pieces 3.5 by 2: upright gives 2 across by 5 down, 10 pieces; turned gives 3 across by 2 down, 6 pieces. Best is upright with 10 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "8.5",
+   "11",
+   "3.5",
+   "2",
+   "0.125",
+   "0.25"
+  ],
+  "expected": "ERR:the gap must be a number from 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "8.5",
+   "11",
+   "4.25",
+   "5.5",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 8.5 by 11, margin 0, gap 0, pieces 4.25 by 5.5: upright gives 2 across by 2 down, 4 pieces; turned gives 1 across by 2 down, 2 pieces. Best is upright with 4 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "8.5",
+   "11",
+   "5",
+   "5",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 8.5 by 11, margin 0, gap 0, pieces 5 by 5: upright gives 1 across by 2 down, 2 pieces; turned gives 1 across by 2 down, 2 pieces. Both give 2 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "8.5",
+   "11",
+   "8.5",
+   "11",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 8.5 by 11, margin 0, gap 0, pieces 8.5 by 11: upright gives 1 across by 1 down, 1 piece; turned gives 0 across by 1 down, 0 pieces. Best is upright with 1 piece."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "8.5",
+   "11",
+   "8.51",
+   "11",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 8.5 by 11, margin 0, gap 0, pieces 8.51 by 11: upright gives 0 across by 1 down, 0 pieces; turned gives 0 across by 1 down, 0 pieces. No piece fits on the sheet."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "8.5",
+   "11",
+   "8.5",
+   "11",
+   "0",
+   "0.01"
+  ],
+  "expected": "Sheet 8.5 by 11, margin 0.01, gap 0, pieces 8.5 by 11: upright gives 0 across by 0 down, 0 pieces; turned gives 0 across by 1 down, 0 pieces. No piece fits on the sheet."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "8.5",
+   "11",
+   "12",
+   "1",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 8.5 by 11, margin 0, gap 0, pieces 12 by 1: upright gives 0 across by 11 down, 0 pieces; turned gives 8 across by 0 down, 0 pieces. No piece fits on the sheet."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "8.5",
+   "11",
+   "1",
+   "12",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 8.5 by 11, margin 0, gap 0, pieces 1 by 12: upright gives 8 across by 0 down, 0 pieces; turned gives 0 across by 11 down, 0 pieces. No piece fits on the sheet."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "8.5",
+   "11",
+   "12",
+   "13",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 8.5 by 11, margin 0, gap 0, pieces 12 by 13: upright gives 0 across by 0 down, 0 pieces; turned gives 0 across by 0 down, 0 pieces. No piece fits on the sheet."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "10",
+   "10",
+   "4.99",
+   "4.99",
+   "0.02",
+   "0"
+  ],
+  "expected": "Sheet 10 by 10, margin 0, gap 0.02, pieces 4.99 by 4.99: upright gives 2 across by 2 down, 4 pieces; turned gives 2 across by 2 down, 4 pieces. Both give 4 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "10",
+   "10",
+   "5",
+   "5",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 10 by 10, margin 0, gap 0, pieces 5 by 5: upright gives 2 across by 2 down, 4 pieces; turned gives 2 across by 2 down, 4 pieces. Both give 4 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "10",
+   "10",
+   "5",
+   "5",
+   "0.01",
+   "0"
+  ],
+  "expected": "Sheet 10 by 10, margin 0, gap 0.01, pieces 5 by 5: upright gives 1 across by 1 down, 1 piece; turned gives 1 across by 1 down, 1 piece. Both give 1 piece."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "10",
+   "10",
+   "5",
+   "3",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 10 by 10, margin 0, gap 0, pieces 5 by 3: upright gives 2 across by 3 down, 6 pieces; turned gives 3 across by 2 down, 6 pieces. Both give 6 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "10",
+   "6",
+   "3",
+   "5",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 10 by 6, margin 0, gap 0, pieces 3 by 5: upright gives 3 across by 1 down, 3 pieces; turned gives 2 across by 2 down, 4 pieces. Best is turned with 4 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "10",
+   "10",
+   "1",
+   "1",
+   "0",
+   "4.99"
+  ],
+  "expected": "Sheet 10 by 10, margin 4.99, gap 0, pieces 1 by 1: upright gives 0 across by 0 down, 0 pieces; turned gives 0 across by 0 down, 0 pieces. No piece fits on the sheet."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "10",
+   "10",
+   "1",
+   "1",
+   "0",
+   "5"
+  ],
+  "expected": "ERR:the margins leave no room on the sheet"
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "10",
+   "10",
+   "1",
+   "1",
+   "0",
+   "6"
+  ],
+  "expected": "ERR:the margins leave no room on the sheet"
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "0.01",
+   "0.01",
+   "0.01",
+   "0.01",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 0.01 by 0.01, margin 0, gap 0, pieces 0.01 by 0.01: upright gives 1 across by 1 down, 1 piece; turned gives 1 across by 1 down, 1 piece. Both give 1 piece."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "9999.99",
+   "9999.99",
+   "0.01",
+   "0.01",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 9999.99 by 9999.99, margin 0, gap 0, pieces 0.01 by 0.01: upright gives 999999 across by 999999 down, 999998000001 pieces; turned gives 999999 across by 999999 down, 999998000001 pieces. Both give 999998000001 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "9999.99",
+   "9999.99",
+   "0.01",
+   "0.01",
+   "0.01",
+   "0"
+  ],
+  "expected": "Sheet 9999.99 by 9999.99, margin 0, gap 0.01, pieces 0.01 by 0.01: upright gives 500000 across by 500000 down, 250000000000 pieces; turned gives 500000 across by 500000 down, 250000000000 pieces. Both give 250000000000 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "9999.99",
+   "9999.99",
+   "9999.99",
+   "9999.99",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 9999.99 by 9999.99, margin 0, gap 0, pieces 9999.99 by 9999.99: upright gives 1 across by 1 down, 1 piece; turned gives 1 across by 1 down, 1 piece. Both give 1 piece."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "100",
+   "100",
+   "30",
+   "40",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 100 by 100, margin 0, gap 0, pieces 30 by 40: upright gives 3 across by 2 down, 6 pieces; turned gives 2 across by 3 down, 6 pieces. Both give 6 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "100",
+   "100",
+   "40",
+   "30",
+   "10",
+   "0"
+  ],
+  "expected": "Sheet 100 by 100, margin 0, gap 10, pieces 40 by 30: upright gives 2 across by 2 down, 4 pieces; turned gives 2 across by 2 down, 4 pieces. Both give 4 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "0",
+   "11",
+   "3",
+   "2",
+   "0",
+   "0"
+  ],
+  "expected": "ERR:the sheet width must be a number above 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "8.5",
+   "0",
+   "3",
+   "2",
+   "0",
+   "0"
+  ],
+  "expected": "ERR:the sheet height must be a number above 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "8.5",
+   "11",
+   "0",
+   "2",
+   "0",
+   "0"
+  ],
+  "expected": "ERR:the piece width must be a number above 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "8.5",
+   "11",
+   "3",
+   "0",
+   "0",
+   "0"
+  ],
+  "expected": "ERR:the piece height must be a number above 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "8.5",
+   "11",
+   "3",
+   "2",
+   "-1",
+   "0"
+  ],
+  "expected": "ERR:the gap must be a number from 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "8.5",
+   "11",
+   "3",
+   "2",
+   "0",
+   "x"
+  ],
+  "expected": "ERR:the margin must be a number from 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "8.5",
+   "11",
+   "3",
+   "2",
+   "",
+   "0"
+  ],
+  "expected": "ERR:the gap must be a number from 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "8.5",
+   "11",
+   "3",
+   "2.001",
+   "0",
+   "0"
+  ],
+  "expected": "ERR:the piece height must be a number above 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "10000",
+   "11",
+   "3",
+   "2",
+   "0",
+   "0"
+  ],
+  "expected": "ERR:the sheet width must be a number above 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   " 8.5 ",
+   " 11 ",
+   " 3.5 ",
+   " 2 ",
+   " 0.1 ",
+   " 0.25 "
+  ],
+  "expected": "Sheet 8.5 by 11, margin 0.25, gap 0.1, pieces 3.5 by 2: upright gives 2 across by 5 down, 10 pieces; turned gives 3 across by 2 down, 6 pieces. Best is upright with 10 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "31.06",
+   "20.74",
+   "2.47",
+   "22.73",
+   "0.00",
+   "0.00"
+  ],
+  "expected": "Sheet 31.06 by 20.74, margin 0, gap 0, pieces 2.47 by 22.73: upright gives 12 across by 0 down, 0 pieces; turned gives 1 across by 8 down, 8 pieces. Best is turned with 8 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "3.39",
+   "3.25",
+   "17.68",
+   "2.20",
+   "0.00",
+   "1.00"
+  ],
+  "expected": "Sheet 3.39 by 3.25, margin 1, gap 0, pieces 17.68 by 2.2: upright gives 0 across by 0 down, 0 pieces; turned gives 0 across by 0 down, 0 pieces. No piece fits on the sheet."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "40.44",
+   "13.63",
+   "8.87",
+   "21.96",
+   "0.25",
+   "0.00"
+  ],
+  "expected": "Sheet 40.44 by 13.63, margin 0, gap 0.25, pieces 8.87 by 21.96: upright gives 4 across by 0 down, 0 pieces; turned gives 1 across by 1 down, 1 piece. Best is turned with 1 piece."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "11.07",
+   "8.61",
+   "24.06",
+   "17.97",
+   "0.10",
+   "1.00"
+  ],
+  "expected": "Sheet 11.07 by 8.61, margin 1, gap 0.1, pieces 24.06 by 17.97: upright gives 0 across by 0 down, 0 pieces; turned gives 0 across by 0 down, 0 pieces. No piece fits on the sheet."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "6.08",
+   "27.88",
+   "18.12",
+   "15.43",
+   "0.50",
+   "1.00"
+  ],
+  "expected": "Sheet 6.08 by 27.88, margin 1, gap 0.5, pieces 18.12 by 15.43: upright gives 0 across by 1 down, 0 pieces; turned gives 0 across by 1 down, 0 pieces. No piece fits on the sheet."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "9.21",
+   "44.64",
+   "10.91",
+   "12.39",
+   "0.05",
+   "1.00"
+  ],
+  "expected": "Sheet 9.21 by 44.64, margin 1, gap 0.05, pieces 10.91 by 12.39: upright gives 0 across by 3 down, 0 pieces; turned gives 0 across by 3 down, 0 pieces. No piece fits on the sheet."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "32.08",
+   "41.21",
+   "15.90",
+   "22.80",
+   "0.05",
+   "0.10"
+  ],
+  "expected": "Sheet 32.08 by 41.21, margin 0.1, gap 0.05, pieces 15.9 by 22.8: upright gives 2 across by 1 down, 2 pieces; turned gives 1 across by 2 down, 2 pieces. Both give 2 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "42.01",
+   "13.91",
+   "7.80",
+   "2.20",
+   "0.00",
+   "0.00"
+  ],
+  "expected": "Sheet 42.01 by 13.91, margin 0, gap 0, pieces 7.8 by 2.2: upright gives 5 across by 6 down, 30 pieces; turned gives 19 across by 1 down, 19 pieces. Best is upright with 30 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "24.00",
+   "9.56",
+   "19.50",
+   "24.73",
+   "0.05",
+   "0.00"
+  ],
+  "expected": "Sheet 24 by 9.56, margin 0, gap 0.05, pieces 19.5 by 24.73: upright gives 1 across by 0 down, 0 pieces; turned gives 0 across by 0 down, 0 pieces. No piece fits on the sheet."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "5.22",
+   "26.94",
+   "12.02",
+   "13.68",
+   "0.00",
+   "0.25"
+  ],
+  "expected": "Sheet 5.22 by 26.94, margin 0.25, gap 0, pieces 12.02 by 13.68: upright gives 0 across by 1 down, 0 pieces; turned gives 0 across by 2 down, 0 pieces. No piece fits on the sheet."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "33.88",
+   "3.87",
+   "6.94",
+   "5.64",
+   "0.05",
+   "0.00"
+  ],
+  "expected": "Sheet 33.88 by 3.87, margin 0, gap 0.05, pieces 6.94 by 5.64: upright gives 4 across by 0 down, 0 pieces; turned gives 5 across by 0 down, 0 pieces. No piece fits on the sheet."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "49.68",
+   "3.77",
+   "22.45",
+   "3.75",
+   "0.05",
+   "0.50"
+  ],
+  "expected": "Sheet 49.68 by 3.77, margin 0.5, gap 0.05, pieces 22.45 by 3.75: upright gives 2 across by 0 down, 0 pieces; turned gives 12 across by 0 down, 0 pieces. No piece fits on the sheet."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "25.71",
+   "34.05",
+   "0.63",
+   "9.83",
+   "0.00",
+   "1.00"
+  ],
+  "expected": "Sheet 25.71 by 34.05, margin 1, gap 0, pieces 0.63 by 9.83: upright gives 37 across by 3 down, 111 pieces; turned gives 2 across by 50 down, 100 pieces. Best is upright with 111 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "31.00",
+   "14.84",
+   "24.01",
+   "10.36",
+   "0.25",
+   "0.50"
+  ],
+  "expected": "Sheet 31 by 14.84, margin 0.5, gap 0.25, pieces 24.01 by 10.36: upright gives 1 across by 1 down, 1 piece; turned gives 2 across by 0 down, 0 pieces. Best is upright with 1 piece."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "34.93",
+   "8.22",
+   "6.36",
+   "20.54",
+   "0.05",
+   "0.00"
+  ],
+  "expected": "Sheet 34.93 by 8.22, margin 0, gap 0.05, pieces 6.36 by 20.54: upright gives 5 across by 0 down, 0 pieces; turned gives 1 across by 1 down, 1 piece. Best is turned with 1 piece."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "46.15",
+   "49.32",
+   "24.69",
+   "23.22",
+   "0.50",
+   "0.25"
+  ],
+  "expected": "Sheet 46.15 by 49.32, margin 0.25, gap 0.5, pieces 24.69 by 23.22: upright gives 1 across by 2 down, 2 pieces; turned gives 1 across by 1 down, 1 piece. Best is upright with 2 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "22.97",
+   "26.79",
+   "14.44",
+   "21.40",
+   "0.05",
+   "0.00"
+  ],
+  "expected": "Sheet 22.97 by 26.79, margin 0, gap 0.05, pieces 14.44 by 21.4: upright gives 1 across by 1 down, 1 piece; turned gives 1 across by 1 down, 1 piece. Both give 1 piece."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "28.72",
+   "10.37",
+   "10.92",
+   "12.25",
+   "0.00",
+   "0.50"
+  ],
+  "expected": "Sheet 28.72 by 10.37, margin 0.5, gap 0, pieces 10.92 by 12.25: upright gives 2 across by 0 down, 0 pieces; turned gives 2 across by 0 down, 0 pieces. No piece fits on the sheet."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "24.26",
+   "10.82",
+   "14.95",
+   "23.80",
+   "0.05",
+   "0.00"
+  ],
+  "expected": "Sheet 24.26 by 10.82, margin 0, gap 0.05, pieces 14.95 by 23.8: upright gives 1 across by 0 down, 0 pieces; turned gives 1 across by 0 down, 0 pieces. No piece fits on the sheet."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "9.03",
+   "45.02",
+   "14.49",
+   "5.44",
+   "0.00",
+   "0.00"
+  ],
+  "expected": "Sheet 9.03 by 45.02, margin 0, gap 0, pieces 14.49 by 5.44: upright gives 0 across by 8 down, 0 pieces; turned gives 1 across by 3 down, 3 pieces. Best is turned with 3 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "9.55",
+   "11.32",
+   "11.74",
+   "19.81",
+   "0.00",
+   "0.50"
+  ],
+  "expected": "Sheet 9.55 by 11.32, margin 0.5, gap 0, pieces 11.74 by 19.81: upright gives 0 across by 0 down, 0 pieces; turned gives 0 across by 0 down, 0 pieces. No piece fits on the sheet."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "42.58",
+   "28.96",
+   "19.70",
+   "23.09",
+   "0.00",
+   "0.50"
+  ],
+  "expected": "Sheet 42.58 by 28.96, margin 0.5, gap 0, pieces 19.7 by 23.09: upright gives 2 across by 1 down, 2 pieces; turned gives 1 across by 1 down, 1 piece. Best is upright with 2 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "46.65",
+   "44.62",
+   "18.59",
+   "18.59",
+   "0.00",
+   "0.00"
+  ],
+  "expected": "Sheet 46.65 by 44.62, margin 0, gap 0, pieces 18.59 by 18.59: upright gives 2 across by 2 down, 4 pieces; turned gives 2 across by 2 down, 4 pieces. Both give 4 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "42.74",
+   "29.11",
+   "17.73",
+   "23.04",
+   "0.00",
+   "0.10"
+  ],
+  "expected": "Sheet 42.74 by 29.11, margin 0.1, gap 0, pieces 17.73 by 23.04: upright gives 2 across by 1 down, 2 pieces; turned gives 1 across by 1 down, 1 piece. Best is upright with 2 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "29.20",
+   "20.22",
+   "5.86",
+   "9.46",
+   "0.10",
+   "0.10"
+  ],
+  "expected": "Sheet 29.2 by 20.22, margin 0.1, gap 0.1, pieces 5.86 by 9.46: upright gives 4 across by 2 down, 8 pieces; turned gives 3 across by 3 down, 9 pieces. Best is turned with 9 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "9.80",
+   "24.05",
+   "21.77",
+   "7.60",
+   "0.25",
+   "1.00"
+  ],
+  "expected": "Sheet 9.8 by 24.05, margin 1, gap 0.25, pieces 21.77 by 7.6: upright gives 0 across by 2 down, 0 pieces; turned gives 1 across by 1 down, 1 piece. Best is turned with 1 piece."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "41.82",
+   "16.51",
+   "8.61",
+   "0.83",
+   "0.25",
+   "1.00"
+  ],
+  "expected": "Sheet 41.82 by 16.51, margin 1, gap 0.25, pieces 8.61 by 0.83: upright gives 4 across by 13 down, 52 pieces; turned gives 37 across by 1 down, 37 pieces. Best is upright with 52 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "46.04",
+   "43.84",
+   "21.91",
+   "18.47",
+   "0.50",
+   "0.00"
+  ],
+  "expected": "Sheet 46.04 by 43.84, margin 0, gap 0.5, pieces 21.91 by 18.47: upright gives 2 across by 2 down, 4 pieces; turned gives 2 across by 1 down, 2 pieces. Best is upright with 4 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "6.90",
+   "24.12",
+   "12.27",
+   "6.41",
+   "0.00",
+   "0.25"
+  ],
+  "expected": "Sheet 6.9 by 24.12, margin 0.25, gap 0, pieces 12.27 by 6.41: upright gives 0 across by 3 down, 0 pieces; turned gives 0 across by 1 down, 0 pieces. No piece fits on the sheet."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "4.91",
+   "41.56",
+   "2.18",
+   "10.80",
+   "0.00",
+   "0.00"
+  ],
+  "expected": "Sheet 4.91 by 41.56, margin 0, gap 0, pieces 2.18 by 10.8: upright gives 2 across by 3 down, 6 pieces; turned gives 0 across by 19 down, 0 pieces. Best is upright with 6 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "5.54",
+   "7.31",
+   "5.95",
+   "23.73",
+   "0.00",
+   "0.10"
+  ],
+  "expected": "Sheet 5.54 by 7.31, margin 0.1, gap 0, pieces 5.95 by 23.73: upright gives 0 across by 0 down, 0 pieces; turned gives 0 across by 1 down, 0 pieces. No piece fits on the sheet."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "17.99",
+   "18.45",
+   "22.37",
+   "20.87",
+   "0.25",
+   "0.10"
+  ],
+  "expected": "Sheet 17.99 by 18.45, margin 0.1, gap 0.25, pieces 22.37 by 20.87: upright gives 0 across by 0 down, 0 pieces; turned gives 0 across by 0 down, 0 pieces. No piece fits on the sheet."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "18.46",
+   "21.59",
+   "4.37",
+   "24.70",
+   "0.05",
+   "0.10"
+  ],
+  "expected": "Sheet 18.46 by 21.59, margin 0.1, gap 0.05, pieces 4.37 by 24.7: upright gives 4 across by 0 down, 0 pieces; turned gives 0 across by 4 down, 0 pieces. No piece fits on the sheet."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "26.32",
+   "42.42",
+   "15.62",
+   "18.46",
+   "0.25",
+   "0.50"
+  ],
+  "expected": "Sheet 26.32 by 42.42, margin 0.5, gap 0.25, pieces 15.62 by 18.46: upright gives 1 across by 2 down, 2 pieces; turned gives 1 across by 2 down, 2 pieces. Both give 2 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "12.13",
+   "20.57",
+   "19.33",
+   "14.73",
+   "0.10",
+   "0.25"
+  ],
+  "expected": "Sheet 12.13 by 20.57, margin 0.25, gap 0.1, pieces 19.33 by 14.73: upright gives 0 across by 1 down, 0 pieces; turned gives 0 across by 1 down, 0 pieces. No piece fits on the sheet."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "15.94",
+   "2.33",
+   "6.46",
+   "17.97",
+   "0.00",
+   "0.00"
+  ],
+  "expected": "Sheet 15.94 by 2.33, margin 0, gap 0, pieces 6.46 by 17.97: upright gives 2 across by 0 down, 0 pieces; turned gives 0 across by 0 down, 0 pieces. No piece fits on the sheet."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "7.83",
+   "24.77",
+   "5.72",
+   "14.03",
+   "0.50",
+   "0.10"
+  ],
+  "expected": "Sheet 7.83 by 24.77, margin 0.1, gap 0.5, pieces 5.72 by 14.03: upright gives 1 across by 1 down, 1 piece; turned gives 0 across by 4 down, 0 pieces. Best is upright with 1 piece."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "46.83",
+   "41.82",
+   "23.56",
+   "16.98",
+   "0.10",
+   "0.10"
+  ],
+  "expected": "Sheet 46.83 by 41.82, margin 0.1, gap 0.1, pieces 23.56 by 16.98: upright gives 1 across by 2 down, 2 pieces; turned gives 2 across by 1 down, 2 pieces. Both give 2 pieces."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "30.53",
+   "5.05",
+   "22.40",
+   "9.47",
+   "0.50",
+   "0.25"
+  ],
+  "expected": "Sheet 30.53 by 5.05, margin 0.25, gap 0.5, pieces 22.4 by 9.47: upright gives 1 across by 0 down, 0 pieces; turned gives 3 across by 0 down, 0 pieces. No piece fits on the sheet."
+ },
+ {
+  "fn": "gridTruth",
+  "args": [
+   "43.06",
+   "23.24",
+   "14.90",
+   "19.54",
+   "0.10",
+   "0.10"
+  ],
+  "expected": "Sheet 43.06 by 23.24, margin 0.1, gap 0.1, pieces 14.9 by 19.54: upright gives 2 across by 1 down, 2 pieces; turned gives 2 across by 1 down, 2 pieces. Both give 2 pieces."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "8.5",
+   "11",
+   "3.5",
+   "2",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 8.5 by 11, margin 0, gap 0, pieces 3.5 by 2: the best layout puts 12 pieces on the sheet, covering 89.8% of it and leaving 10.2% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "8.5",
+   "11",
+   "3.5",
+   "2",
+   "0.1",
+   "0.25"
+  ],
+  "expected": "Sheet 8.5 by 11, margin 0.25, gap 0.1, pieces 3.5 by 2: the best layout puts 10 pieces on the sheet, covering 74.9% of it and leaving 25.1% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "8.5",
+   "11",
+   "3.5",
+   "2",
+   "0.125",
+   "0.25"
+  ],
+  "expected": "ERR:the gap must be a number from 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "8.5",
+   "11",
+   "4.25",
+   "5.5",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 8.5 by 11, margin 0, gap 0, pieces 4.25 by 5.5: the best layout puts 4 pieces on the sheet, covering 100% of it and leaving 0% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "8.5",
+   "11",
+   "5",
+   "5",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 8.5 by 11, margin 0, gap 0, pieces 5 by 5: the best layout puts 2 pieces on the sheet, covering 53.5% of it and leaving 46.5% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "8.5",
+   "11",
+   "8.5",
+   "11",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 8.5 by 11, margin 0, gap 0, pieces 8.5 by 11: the best layout puts 1 piece on the sheet, covering 100% of it and leaving 0% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "8.5",
+   "11",
+   "8.51",
+   "11",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 8.5 by 11, margin 0, gap 0, pieces 8.51 by 11: the best layout puts 0 pieces on the sheet, covering 0% of it and leaving 100% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "8.5",
+   "11",
+   "8.5",
+   "11",
+   "0",
+   "0.01"
+  ],
+  "expected": "Sheet 8.5 by 11, margin 0.01, gap 0, pieces 8.5 by 11: the best layout puts 0 pieces on the sheet, covering 0% of it and leaving 100% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "8.5",
+   "11",
+   "12",
+   "1",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 8.5 by 11, margin 0, gap 0, pieces 12 by 1: the best layout puts 0 pieces on the sheet, covering 0% of it and leaving 100% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "8.5",
+   "11",
+   "1",
+   "12",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 8.5 by 11, margin 0, gap 0, pieces 1 by 12: the best layout puts 0 pieces on the sheet, covering 0% of it and leaving 100% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "8.5",
+   "11",
+   "12",
+   "13",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 8.5 by 11, margin 0, gap 0, pieces 12 by 13: the best layout puts 0 pieces on the sheet, covering 0% of it and leaving 100% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "10",
+   "10",
+   "4.99",
+   "4.99",
+   "0.02",
+   "0"
+  ],
+  "expected": "Sheet 10 by 10, margin 0, gap 0.02, pieces 4.99 by 4.99: the best layout puts 4 pieces on the sheet, covering 99.6% of it and leaving 0.4% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "10",
+   "10",
+   "5",
+   "5",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 10 by 10, margin 0, gap 0, pieces 5 by 5: the best layout puts 4 pieces on the sheet, covering 100% of it and leaving 0% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "10",
+   "10",
+   "5",
+   "5",
+   "0.01",
+   "0"
+  ],
+  "expected": "Sheet 10 by 10, margin 0, gap 0.01, pieces 5 by 5: the best layout puts 1 piece on the sheet, covering 25% of it and leaving 75% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "10",
+   "10",
+   "5",
+   "3",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 10 by 10, margin 0, gap 0, pieces 5 by 3: the best layout puts 6 pieces on the sheet, covering 90% of it and leaving 10% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "10",
+   "6",
+   "3",
+   "5",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 10 by 6, margin 0, gap 0, pieces 3 by 5: the best layout puts 4 pieces on the sheet, covering 100% of it and leaving 0% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "10",
+   "10",
+   "1",
+   "1",
+   "0",
+   "4.99"
+  ],
+  "expected": "Sheet 10 by 10, margin 4.99, gap 0, pieces 1 by 1: the best layout puts 0 pieces on the sheet, covering 0% of it and leaving 100% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "10",
+   "10",
+   "1",
+   "1",
+   "0",
+   "5"
+  ],
+  "expected": "ERR:the margins leave no room on the sheet"
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "10",
+   "10",
+   "1",
+   "1",
+   "0",
+   "6"
+  ],
+  "expected": "ERR:the margins leave no room on the sheet"
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "0.01",
+   "0.01",
+   "0.01",
+   "0.01",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 0.01 by 0.01, margin 0, gap 0, pieces 0.01 by 0.01: the best layout puts 1 piece on the sheet, covering 100% of it and leaving 0% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "9999.99",
+   "9999.99",
+   "0.01",
+   "0.01",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 9999.99 by 9999.99, margin 0, gap 0, pieces 0.01 by 0.01: the best layout puts 999998000001 pieces on the sheet, covering 100% of it and leaving 0% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "9999.99",
+   "9999.99",
+   "0.01",
+   "0.01",
+   "0.01",
+   "0"
+  ],
+  "expected": "Sheet 9999.99 by 9999.99, margin 0, gap 0.01, pieces 0.01 by 0.01: the best layout puts 250000000000 pieces on the sheet, covering 25% of it and leaving 75% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "9999.99",
+   "9999.99",
+   "9999.99",
+   "9999.99",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 9999.99 by 9999.99, margin 0, gap 0, pieces 9999.99 by 9999.99: the best layout puts 1 piece on the sheet, covering 100% of it and leaving 0% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "100",
+   "100",
+   "30",
+   "40",
+   "0",
+   "0"
+  ],
+  "expected": "Sheet 100 by 100, margin 0, gap 0, pieces 30 by 40: the best layout puts 6 pieces on the sheet, covering 72% of it and leaving 28% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "100",
+   "100",
+   "40",
+   "30",
+   "10",
+   "0"
+  ],
+  "expected": "Sheet 100 by 100, margin 0, gap 10, pieces 40 by 30: the best layout puts 4 pieces on the sheet, covering 48% of it and leaving 52% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "0",
+   "11",
+   "3",
+   "2",
+   "0",
+   "0"
+  ],
+  "expected": "ERR:the sheet width must be a number above 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "8.5",
+   "0",
+   "3",
+   "2",
+   "0",
+   "0"
+  ],
+  "expected": "ERR:the sheet height must be a number above 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "8.5",
+   "11",
+   "0",
+   "2",
+   "0",
+   "0"
+  ],
+  "expected": "ERR:the piece width must be a number above 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "8.5",
+   "11",
+   "3",
+   "0",
+   "0",
+   "0"
+  ],
+  "expected": "ERR:the piece height must be a number above 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "8.5",
+   "11",
+   "3",
+   "2",
+   "-1",
+   "0"
+  ],
+  "expected": "ERR:the gap must be a number from 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "2.71",
+   "48.56",
+   "23.23",
+   "5.01",
+   "0.50",
+   "1.00"
+  ],
+  "expected": "Sheet 2.71 by 48.56, margin 1, gap 0.5, pieces 23.23 by 5.01: the best layout puts 0 pieces on the sheet, covering 0% of it and leaving 100% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "24.89",
+   "42.88",
+   "5.90",
+   "24.60",
+   "0.00",
+   "1.00"
+  ],
+  "expected": "Sheet 24.89 by 42.88, margin 1, gap 0, pieces 5.9 by 24.6: the best layout puts 3 pieces on the sheet, covering 40.8% of it and leaving 59.2% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "5.23",
+   "29.48",
+   "11.41",
+   "12.17",
+   "0.25",
+   "0.50"
+  ],
+  "expected": "Sheet 5.23 by 29.48, margin 0.5, gap 0.25, pieces 11.41 by 12.17: the best layout puts 0 pieces on the sheet, covering 0% of it and leaving 100% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "40.51",
+   "48.83",
+   "16.20",
+   "18.16",
+   "0.00",
+   "0.10"
+  ],
+  "expected": "Sheet 40.51 by 48.83, margin 0.1, gap 0, pieces 16.2 by 18.16: the best layout puts 6 pieces on the sheet, covering 89.2% of it and leaving 10.8% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "3.71",
+   "33.85",
+   "12.67",
+   "20.12",
+   "0.10",
+   "1.00"
+  ],
+  "expected": "Sheet 3.71 by 33.85, margin 1, gap 0.1, pieces 12.67 by 20.12: the best layout puts 0 pieces on the sheet, covering 0% of it and leaving 100% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "38.87",
+   "42.70",
+   "19.66",
+   "17.99",
+   "0.00",
+   "0.00"
+  ],
+  "expected": "Sheet 38.87 by 42.7, margin 0, gap 0, pieces 19.66 by 17.99: the best layout puts 4 pieces on the sheet, covering 85.2% of it and leaving 14.8% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "46.42",
+   "10.33",
+   "7.75",
+   "19.08",
+   "0.00",
+   "0.10"
+  ],
+  "expected": "Sheet 46.42 by 10.33, margin 0.1, gap 0, pieces 7.75 by 19.08: the best layout puts 2 pieces on the sheet, covering 61.7% of it and leaving 38.3% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "8.85",
+   "46.14",
+   "19.04",
+   "13.39",
+   "0.25",
+   "0.50"
+  ],
+  "expected": "Sheet 8.85 by 46.14, margin 0.5, gap 0.25, pieces 19.04 by 13.39: the best layout puts 0 pieces on the sheet, covering 0% of it and leaving 100% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "5.84",
+   "29.81",
+   "8.97",
+   "8.25",
+   "0.05",
+   "0.50"
+  ],
+  "expected": "Sheet 5.84 by 29.81, margin 0.5, gap 0.05, pieces 8.97 by 8.25: the best layout puts 0 pieces on the sheet, covering 0% of it and leaving 100% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "28.79",
+   "15.95",
+   "0.77",
+   "24.03",
+   "0.10",
+   "1.00"
+  ],
+  "expected": "Sheet 28.79 by 15.95, margin 1, gap 0.1, pieces 0.77 by 24.03: the best layout puts 16 pieces on the sheet, covering 64.5% of it and leaving 35.5% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "25.39",
+   "43.17",
+   "24.15",
+   "5.64",
+   "0.50",
+   "1.00"
+  ],
+  "expected": "Sheet 25.39 by 43.17, margin 1, gap 0.5, pieces 24.15 by 5.64: the best layout puts 3 pieces on the sheet, covering 37.3% of it and leaving 62.7% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "37.22",
+   "48.28",
+   "5.39",
+   "21.45",
+   "0.10",
+   "1.00"
+  ],
+  "expected": "Sheet 37.22 by 48.28, margin 1, gap 0.1, pieces 5.39 by 21.45: the best layout puts 12 pieces on the sheet, covering 77.2% of it and leaving 22.8% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "33.51",
+   "15.17",
+   "7.64",
+   "10.79",
+   "0.50",
+   "0.00"
+  ],
+  "expected": "Sheet 33.51 by 15.17, margin 0, gap 0.5, pieces 7.64 by 10.79: the best layout puts 4 pieces on the sheet, covering 64.9% of it and leaving 35.1% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "25.72",
+   "1.45",
+   "10.99",
+   "17.34",
+   "0.05",
+   "0.10"
+  ],
+  "expected": "Sheet 25.72 by 1.45, margin 0.1, gap 0.05, pieces 10.99 by 17.34: the best layout puts 0 pieces on the sheet, covering 0% of it and leaving 100% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "17.99",
+   "1.60",
+   "7.81",
+   "10.97",
+   "0.50",
+   "1.00"
+  ],
+  "expected": "ERR:the margins leave no room on the sheet"
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "20.50",
+   "17.12",
+   "18.89",
+   "20.45",
+   "0.50",
+   "0.25"
+  ],
+  "expected": "Sheet 20.5 by 17.12, margin 0.25, gap 0.5, pieces 18.89 by 20.45: the best layout puts 0 pieces on the sheet, covering 0% of it and leaving 100% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "19.78",
+   "10.76",
+   "20.57",
+   "24.84",
+   "0.00",
+   "0.50"
+  ],
+  "expected": "Sheet 19.78 by 10.76, margin 0.5, gap 0, pieces 20.57 by 24.84: the best layout puts 0 pieces on the sheet, covering 0% of it and leaving 100% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "45.33",
+   "43.92",
+   "16.23",
+   "20.95",
+   "0.00",
+   "0.00"
+  ],
+  "expected": "Sheet 45.33 by 43.92, margin 0, gap 0, pieces 16.23 by 20.95: the best layout puts 4 pieces on the sheet, covering 68.3% of it and leaving 31.7% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "15.13",
+   "26.84",
+   "3.01",
+   "18.13",
+   "0.10",
+   "0.25"
+  ],
+  "expected": "Sheet 15.13 by 26.84, margin 0.25, gap 0.1, pieces 3.01 by 18.13: the best layout puts 4 pieces on the sheet, covering 53.8% of it and leaving 46.2% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "1.31",
+   "13.04",
+   "18.41",
+   "10.99",
+   "0.25",
+   "0.00"
+  ],
+  "expected": "Sheet 1.31 by 13.04, margin 0, gap 0.25, pieces 18.41 by 10.99: the best layout puts 0 pieces on the sheet, covering 0% of it and leaving 100% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "33.19",
+   "6.12",
+   "17.02",
+   "7.95",
+   "0.05",
+   "0.25"
+  ],
+  "expected": "Sheet 33.19 by 6.12, margin 0.25, gap 0.05, pieces 17.02 by 7.95: the best layout puts 0 pieces on the sheet, covering 0% of it and leaving 100% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "26.81",
+   "43.55",
+   "2.85",
+   "10.88",
+   "0.05",
+   "0.25"
+  ],
+  "expected": "Sheet 26.81 by 43.55, margin 0.25, gap 0.05, pieces 2.85 by 10.88: the best layout puts 28 pieces on the sheet, covering 74.4% of it and leaving 25.6% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "8.61",
+   "49.05",
+   "16.27",
+   "17.17",
+   "0.05",
+   "0.10"
+  ],
+  "expected": "Sheet 8.61 by 49.05, margin 0.1, gap 0.05, pieces 16.27 by 17.17: the best layout puts 0 pieces on the sheet, covering 0% of it and leaving 100% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "43.12",
+   "31.97",
+   "10.61",
+   "23.12",
+   "0.00",
+   "1.00"
+  ],
+  "expected": "Sheet 43.12 by 31.97, margin 1, gap 0, pieces 10.61 by 23.12: the best layout puts 3 pieces on the sheet, covering 53.4% of it and leaving 46.6% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "5.44",
+   "18.33",
+   "3.38",
+   "18.08",
+   "0.00",
+   "0.25"
+  ],
+  "expected": "Sheet 5.44 by 18.33, margin 0.25, gap 0, pieces 3.38 by 18.08: the best layout puts 0 pieces on the sheet, covering 0% of it and leaving 100% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "9.54",
+   "25.37",
+   "10.59",
+   "10.73",
+   "0.00",
+   "1.00"
+  ],
+  "expected": "Sheet 9.54 by 25.37, margin 1, gap 0, pieces 10.59 by 10.73: the best layout puts 0 pieces on the sheet, covering 0% of it and leaving 100% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "6.65",
+   "38.96",
+   "9.87",
+   "18.85",
+   "0.25",
+   "0.10"
+  ],
+  "expected": "Sheet 6.65 by 38.96, margin 0.1, gap 0.25, pieces 9.87 by 18.85: the best layout puts 0 pieces on the sheet, covering 0% of it and leaving 100% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "37.67",
+   "36.71",
+   "7.19",
+   "9.27",
+   "0.10",
+   "1.00"
+  ],
+  "expected": "Sheet 37.67 by 36.71, margin 1, gap 0.1, pieces 7.19 by 9.27: the best layout puts 12 pieces on the sheet, covering 57.8% of it and leaving 42.2% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "49.30",
+   "11.54",
+   "14.23",
+   "9.74",
+   "0.05",
+   "1.00"
+  ],
+  "expected": "Sheet 49.3 by 11.54, margin 1, gap 0.05, pieces 14.23 by 9.74: the best layout puts 0 pieces on the sheet, covering 0% of it and leaving 100% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "7.07",
+   "22.11",
+   "4.59",
+   "14.09",
+   "0.25",
+   "0.25"
+  ],
+  "expected": "Sheet 7.07 by 22.11, margin 0.25, gap 0.25, pieces 4.59 by 14.09: the best layout puts 1 piece on the sheet, covering 41.4% of it and leaving 58.6% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "21.70",
+   "4.80",
+   "17.81",
+   "15.12",
+   "0.05",
+   "0.50"
+  ],
+  "expected": "Sheet 21.7 by 4.8, margin 0.5, gap 0.05, pieces 17.81 by 15.12: the best layout puts 0 pieces on the sheet, covering 0% of it and leaving 100% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "21.76",
+   "20.55",
+   "4.54",
+   "16.67",
+   "0.00",
+   "0.00"
+  ],
+  "expected": "Sheet 21.76 by 20.55, margin 0, gap 0, pieces 4.54 by 16.67: the best layout puts 4 pieces on the sheet, covering 67.7% of it and leaving 32.3% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "12.25",
+   "1.73",
+   "15.93",
+   "6.77",
+   "0.05",
+   "0.25"
+  ],
+  "expected": "Sheet 12.25 by 1.73, margin 0.25, gap 0.05, pieces 15.93 by 6.77: the best layout puts 0 pieces on the sheet, covering 0% of it and leaving 100% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "15.60",
+   "42.47",
+   "22.23",
+   "16.71",
+   "0.10",
+   "1.00"
+  ],
+  "expected": "Sheet 15.6 by 42.47, margin 1, gap 0.1, pieces 22.23 by 16.71: the best layout puts 0 pieces on the sheet, covering 0% of it and leaving 100% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "6.38",
+   "29.60",
+   "4.98",
+   "24.72",
+   "0.50",
+   "0.25"
+  ],
+  "expected": "Sheet 6.38 by 29.6, margin 0.25, gap 0.5, pieces 4.98 by 24.72: the best layout puts 1 piece on the sheet, covering 65.2% of it and leaving 34.8% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "32.88",
+   "32.43",
+   "17.00",
+   "10.70",
+   "0.05",
+   "1.00"
+  ],
+  "expected": "Sheet 32.88 by 32.43, margin 1, gap 0.05, pieces 17 by 10.7: the best layout puts 2 pieces on the sheet, covering 34.1% of it and leaving 65.9% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "33.51",
+   "13.73",
+   "20.68",
+   "0.82",
+   "0.10",
+   "0.00"
+  ],
+  "expected": "Sheet 33.51 by 13.73, margin 0, gap 0.1, pieces 20.68 by 0.82: the best layout puts 15 pieces on the sheet, covering 55.3% of it and leaving 44.7% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "1.92",
+   "5.58",
+   "10.76",
+   "4.74",
+   "0.00",
+   "0.00"
+  ],
+  "expected": "Sheet 1.92 by 5.58, margin 0, gap 0, pieces 10.76 by 4.74: the best layout puts 0 pieces on the sheet, covering 0% of it and leaving 100% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "49.19",
+   "48.95",
+   "10.08",
+   "18.38",
+   "0.25",
+   "1.00"
+  ],
+  "expected": "Sheet 49.19 by 48.95, margin 1, gap 0.25, pieces 10.08 by 18.38: the best layout puts 8 pieces on the sheet, covering 61.6% of it and leaving 38.4% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "usedTruth",
+  "args": [
+   "16.79",
+   "44.07",
+   "16.01",
+   "1.05",
+   "0.00",
+   "0.00"
+  ],
+  "expected": "Sheet 16.79 by 44.07, margin 0, gap 0, pieces 16.01 by 1.05: the best layout puts 41 pieces on the sheet, covering 93.1% of it and leaving 6.9% for margins, gaps and offcuts."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "100",
+   "10",
+   "0"
+  ],
+  "expected": "100 pieces at 10 per sheet need 10 sheets, with room for 0 more pieces on the last sheet. With 0 spare sheets that is 10 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "101",
+   "10",
+   "0"
+  ],
+  "expected": "101 pieces at 10 per sheet need 11 sheets, with room for 9 more pieces on the last sheet. With 0 spare sheets that is 11 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "99",
+   "10",
+   "0"
+  ],
+  "expected": "99 pieces at 10 per sheet need 10 sheets, with room for 1 more piece on the last sheet. With 0 spare sheets that is 10 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "1",
+   "1",
+   "0"
+  ],
+  "expected": "1 piece at 1 per sheet need 1 sheet, with room for 0 more pieces on the last sheet. With 0 spare sheets that is 1 sheet to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "1",
+   "1",
+   "5"
+  ],
+  "expected": "1 piece at 1 per sheet need 1 sheet, with room for 0 more pieces on the last sheet. With 5 spare sheets that is 6 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "100000",
+   "10000",
+   "1000"
+  ],
+  "expected": "100000 pieces at 10000 per sheet need 10 sheets, with room for 0 more pieces on the last sheet. With 1000 spare sheets that is 1010 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "100001",
+   "1",
+   "0"
+  ],
+  "expected": "ERR:the number of pieces must be a whole number from 1 to 100000"
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "0",
+   "10",
+   "0"
+  ],
+  "expected": "ERR:the number of pieces must be a whole number from 1 to 100000"
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "10",
+   "0",
+   "0"
+  ],
+  "expected": "ERR:the pieces per sheet must be a whole number from 1 to 10000"
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "10",
+   "10",
+   "1001"
+  ],
+  "expected": "ERR:the spare sheets must be a whole number from 0 to 1000"
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "10",
+   "10001",
+   "0"
+  ],
+  "expected": "ERR:the pieces per sheet must be a whole number from 1 to 10000"
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "x",
+   "10",
+   "0"
+  ],
+  "expected": "ERR:the number of pieces must be a whole number from 1 to 100000"
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "10",
+   "10",
+   ""
+  ],
+  "expected": "ERR:the spare sheets must be a whole number from 0 to 1000"
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "10",
+   "10",
+   "-1"
+  ],
+  "expected": "ERR:the spare sheets must be a whole number from 0 to 1000"
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "10.5",
+   "10",
+   "0"
+  ],
+  "expected": "ERR:the number of pieces must be a whole number from 1 to 100000"
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   " 25 ",
+   " 8 ",
+   " 2 "
+  ],
+  "expected": "25 pieces at 8 per sheet need 4 sheets, with room for 7 more pieces on the last sheet. With 2 spare sheets that is 6 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "10",
+   "10",
+   "1"
+  ],
+  "expected": "10 pieces at 10 per sheet need 1 sheet, with room for 0 more pieces on the last sheet. With 1 spare sheet that is 2 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "11",
+   "10",
+   "0"
+  ],
+  "expected": "11 pieces at 10 per sheet need 2 sheets, with room for 9 more pieces on the last sheet. With 0 spare sheets that is 2 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "20",
+   "10",
+   "0"
+  ],
+  "expected": "20 pieces at 10 per sheet need 2 sheets, with room for 0 more pieces on the last sheet. With 0 spare sheets that is 2 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "21",
+   "10",
+   "0"
+  ],
+  "expected": "21 pieces at 10 per sheet need 3 sheets, with room for 9 more pieces on the last sheet. With 0 spare sheets that is 3 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "3394",
+   "27",
+   "18"
+  ],
+  "expected": "3394 pieces at 27 per sheet need 126 sheets, with room for 8 more pieces on the last sheet. With 18 spare sheets that is 144 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "4032",
+   "38",
+   "1"
+  ],
+  "expected": "4032 pieces at 38 per sheet need 107 sheets, with room for 34 more pieces on the last sheet. With 1 spare sheet that is 108 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "1737",
+   "23",
+   "17"
+  ],
+  "expected": "1737 pieces at 23 per sheet need 76 sheets, with room for 11 more pieces on the last sheet. With 17 spare sheets that is 93 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "2439",
+   "24",
+   "17"
+  ],
+  "expected": "2439 pieces at 24 per sheet need 102 sheets, with room for 9 more pieces on the last sheet. With 17 spare sheets that is 119 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "4240",
+   "35",
+   "20"
+  ],
+  "expected": "4240 pieces at 35 per sheet need 122 sheets, with room for 30 more pieces on the last sheet. With 20 spare sheets that is 142 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "385",
+   "56",
+   "12"
+  ],
+  "expected": "385 pieces at 56 per sheet need 7 sheets, with room for 7 more pieces on the last sheet. With 12 spare sheets that is 19 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "3461",
+   "16",
+   "18"
+  ],
+  "expected": "3461 pieces at 16 per sheet need 217 sheets, with room for 11 more pieces on the last sheet. With 18 spare sheets that is 235 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "4020",
+   "21",
+   "6"
+  ],
+  "expected": "4020 pieces at 21 per sheet need 192 sheets, with room for 12 more pieces on the last sheet. With 6 spare sheets that is 198 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "4142",
+   "56",
+   "5"
+  ],
+  "expected": "4142 pieces at 56 per sheet need 74 sheets, with room for 2 more pieces on the last sheet. With 5 spare sheets that is 79 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "1549",
+   "13",
+   "17"
+  ],
+  "expected": "1549 pieces at 13 per sheet need 120 sheets, with room for 11 more pieces on the last sheet. With 17 spare sheets that is 137 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "3946",
+   "11",
+   "2"
+  ],
+  "expected": "3946 pieces at 11 per sheet need 359 sheets, with room for 3 more pieces on the last sheet. With 2 spare sheets that is 361 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "1333",
+   "15",
+   "5"
+  ],
+  "expected": "1333 pieces at 15 per sheet need 89 sheets, with room for 2 more pieces on the last sheet. With 5 spare sheets that is 94 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "1874",
+   "56",
+   "9"
+  ],
+  "expected": "1874 pieces at 56 per sheet need 34 sheets, with room for 30 more pieces on the last sheet. With 9 spare sheets that is 43 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "863",
+   "5",
+   "2"
+  ],
+  "expected": "863 pieces at 5 per sheet need 173 sheets, with room for 2 more pieces on the last sheet. With 2 spare sheets that is 175 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "1000",
+   "53",
+   "2"
+  ],
+  "expected": "1000 pieces at 53 per sheet need 19 sheets, with room for 7 more pieces on the last sheet. With 2 spare sheets that is 21 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "3361",
+   "27",
+   "20"
+  ],
+  "expected": "3361 pieces at 27 per sheet need 125 sheets, with room for 14 more pieces on the last sheet. With 20 spare sheets that is 145 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "3530",
+   "5",
+   "15"
+  ],
+  "expected": "3530 pieces at 5 per sheet need 706 sheets, with room for 0 more pieces on the last sheet. With 15 spare sheets that is 721 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "1803",
+   "28",
+   "5"
+  ],
+  "expected": "1803 pieces at 28 per sheet need 65 sheets, with room for 17 more pieces on the last sheet. With 5 spare sheets that is 70 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "2228",
+   "49",
+   "0"
+  ],
+  "expected": "2228 pieces at 49 per sheet need 46 sheets, with room for 26 more pieces on the last sheet. With 0 spare sheets that is 46 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "1594",
+   "60",
+   "20"
+  ],
+  "expected": "1594 pieces at 60 per sheet need 27 sheets, with room for 26 more pieces on the last sheet. With 20 spare sheets that is 47 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "461",
+   "26",
+   "2"
+  ],
+  "expected": "461 pieces at 26 per sheet need 18 sheets, with room for 7 more pieces on the last sheet. With 2 spare sheets that is 20 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "784",
+   "46",
+   "14"
+  ],
+  "expected": "784 pieces at 46 per sheet need 18 sheets, with room for 44 more pieces on the last sheet. With 14 spare sheets that is 32 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "1069",
+   "54",
+   "14"
+  ],
+  "expected": "1069 pieces at 54 per sheet need 20 sheets, with room for 11 more pieces on the last sheet. With 14 spare sheets that is 34 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "2018",
+   "10",
+   "19"
+  ],
+  "expected": "2018 pieces at 10 per sheet need 202 sheets, with room for 2 more pieces on the last sheet. With 19 spare sheets that is 221 sheets to buy."
+ },
+ {
+  "fn": "sheetsTruth",
+  "args": [
+   "430",
+   "20",
+   "18"
+  ],
+  "expected": "430 pieces at 20 per sheet need 22 sheets, with room for 10 more pieces on the last sheet. With 18 spare sheets that is 40 sheets to buy."
+ }
+]
